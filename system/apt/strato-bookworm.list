@@ -1,1 +1,9 @@
 ## Sources from Hoster Strato ##
+
+deb http://ftp.stratoserver.net/pub/linux/debian bookworm main contrib non-free non-free-firmware
+deb http://ftp.stratoserver.net/pub/linux/debian-security bookworm-security main contrib non-free non-free-firmware
+deb http://ftp.stratoserver.net/pub/linux/debian bookworm-updates main contrib non-free non-free-firmware
+
+deb-src http://ftp.stratoserver.net/pub/linux/debian bookworm main contrib non-free non-free-firmware
+deb-src http://ftp.stratoserver.net/pub/linux/debian-security bookworm-security main contrib non-free non-free-firmware
+deb-src http://ftp.stratoserver.net/pub/linux/debian bookworm-updates main contrib non-free non-free-firmware
