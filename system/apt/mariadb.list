@@ -1,0 +1,4 @@
+## MariaDB ##
+deb [arch=amd64,arm64] https://dlm.mariadb.com/repo/mariadb-server/11.2/repo/debian bookworm main #MariaDB
+deb [arch=amd64,arm64] https://dlm.mariadb.com/repo/maxscale/latest/apt bookworm main #MariaDB MaxScale
+deb [arch=amd64] http://downloads.mariadb.com/Tools/debian bookworm main #MariaDB Tools
