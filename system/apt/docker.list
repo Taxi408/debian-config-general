@@ -1,0 +1,2 @@
+## Docker ##
+deb [arch=amd64 signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/debian bookworm stable
