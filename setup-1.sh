@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export runningas=$(whoami)
+echo "RUNNING AS ${runningas}"
+
 mkdir /rts
 mkdir /rts/cnf
 mkdir /rts/cnf/system
@@ -47,7 +50,7 @@ apt-get -y update
 apt -y install mc nano htop ca-certificates gnupg openssl certbot s3fs sshfs davfs2 cifs-utils php perl python3 python3-pip unzip git curl default-jre software-properties-common apt-transport-https
 apt -y build-dep mc nano htop ca-certificates gnupg openssl certbot sshfs s3fs davfs2 cifs-utils php perl python3 python3-pip unzip git curl default-jre software-properties-common apt-transport-https
 
-apt -y install gnupg2
+apt -y install gnupg2 rdate
 
 apt -y install ufw
 apt -y build-dep ufw
@@ -55,9 +58,14 @@ apt -y build-dep ufw
 apt -y install snap snapd
 apt -y build-dep snap snapd
 
+rdate -4unp ptbtime1.ptb.de
+rdate -4uns ptbtime1.ptb.de
+
 cd /root
 echo 'SELECTED_EDITOR="/bin/nano"' > .selected_editor
 echo 'alias ls="ls -AGhopqls1 --color"' >> .bashrc
+echo 'alias updateworker="apt -y update && apt -y upgrade && apt -y full-upgrade && apt-get -y dist-upgrade && apt-get -y update"' >> .bashrc
+echo 'alias timesync="rdate -4un ptbtime1.ptb.de"' >> .bashrc
 
 source /root/.bashrc
 
