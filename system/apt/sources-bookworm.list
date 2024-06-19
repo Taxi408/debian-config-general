@@ -1,1 +1,16 @@
 ## Official APT Repositories from Debian ##
+
+deb http://deb.debian.org/debian bookworm main non-free contrib non-free-firmware
+deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free  non-free-firmware
+deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free  non-free-firmware
+
+deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian-debug/ bookworm-debug main
+
+deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware #Debian Official Repo
+deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware #Debian Official Repo
+
