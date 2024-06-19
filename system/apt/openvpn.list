@@ -1,0 +1,2 @@
+## OpenVPN ##
+deb [signed-by=/etc/apt/keyrings/openvpn.asc] https://packages.openvpn.net/openvpn3/debian bookworm main
